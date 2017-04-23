@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" ng-app='rudra'>
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Try Angular 1.5</title>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js'></script>
+
+    <script src='{% static "front/js/app/app.module.js" %}'></script>
+    <script src='{% static "front/js/app/app.config.js" %}'></script>
+
+    <style>
+    .new-class {
+        font-size: 72px;
+    }
+    .other-class {
+        font-size: 32px;
+    }
+    .new-class2 {
+        font-size: 120px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='col-sm-12' ng-view>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
